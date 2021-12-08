@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:weightSum="100"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="5dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_weight="50"
+                android:layout_marginLeft="15dp"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                app:cardBackgroundColor="@color/grey"
+                app:cardCornerRadius="10dp"
+                android:layout_marginBottom="10dp"
+                app:cardElevation="5dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_person_add"
+                            android:layout_marginRight="10dp"/>
+
+
+                        <TextView
+                            android:textSize="12sp"
+                            android:fontFamily="@font/poppinssemibold"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Dirawat" />
+
+                     </LinearLayout>
+
+                    <TextView
+                        android:layout_marginTop="15dp"
+                        android:layout_marginLeft="20dp"
+                        android:textSize="16sp"
+                        android:fontFamily="@font/poppinsbold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="9.9774" />
+
+                    <TextView
+                        android:layout_marginTop="15dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:fontFamily="@font/poppinsreguler"
+                        android:text="-160 Kasus Aktif"
+                        android:textSize="8sp" />
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_marginRight="15dp"
+                android:layout_weight="50"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                app:cardBackgroundColor="@color/grey"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_warning_amber_24"
+                            android:layout_marginRight="10dp"/>
+
+
+                        <TextView
+                            android:textSize="12sp"
+                            android:fontFamily="@font/poppinssemibold"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Positif" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_marginTop="15dp"
+                        android:layout_marginLeft="20dp"
+                        android:textSize="16sp"
+                        android:fontFamily="@font/poppinsbold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="4.248.409" />
+
+                    <TextView
+                        android:layout_marginTop="15dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:fontFamily="@font/poppinsreguler"
+                        android:text="+10 Kasus Positif"
+                        android:textSize="8sp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:weightSum="100"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:layout_weight="50"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="10dp"
+                app:cardElevation="5dp"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                app:cardBackgroundColor="@color/grey"
+                app:cardCornerRadius="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_add_task_24"
+                            android:layout_marginRight="10dp"/>
+
+
+                        <TextView
+                            android:textSize="12sp"
+                            android:fontFamily="@font/poppinssemibold"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Sembuh" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_marginTop="15dp"
+                        android:layout_marginLeft="20dp"
+                        android:textSize="16sp"
+                        android:fontFamily="@font/poppinsbold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="4.095.078" />
+
+                    <TextView
+                        android:layout_marginTop="15dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:fontFamily="@font/poppinsreguler"
+                        android:text="+1000 Kasus Sembuh"
+                        android:textSize="8sp" />
+
+                </LinearLayout>
+
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:touchscreenBlocksFocus="true"
+                android:layout_weight="50"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                app:cardBackgroundColor="@color/grey"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_person_remove_24"
+                            android:layout_marginRight="10dp"/>
+
+
+                        <TextView
+                            android:textSize="12sp"
+                            android:fontFamily="@font/poppinssemibold"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Meninggal" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_marginTop="15dp"
+                        android:layout_marginLeft="20dp"
+                        android:textSize="16sp"
+                        android:fontFamily="@font/poppinsbold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="143.557" />
+
+                    <TextView
+                        android:layout_marginTop="15dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:fontFamily="@font/poppinsreguler"
+                        android:text="+10 Kasus Meninggal"
+                        android:textSize="8sp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background_merah"
+    tools:context=".fragment.FragmentProfile">
+
+    <TextView
+        android:id="@+id/tv_myProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="My Profile"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="20dp"/>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_marginTop="35dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/ll_background_Profile"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/background_form">
+
+            <ImageView
+                android:id="@+id/iv_image_profile"
+                android:layout_marginTop="40dp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/profile"/>
+
+            <TextView
+                android:id="@+id/tv_nama_profile"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Muhamad Juliardi"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="18sp"/>
+
+            <View
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:background="#F4F4F4"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+            <LinearLayout
+                android:id="@+id/ll_background_change_username"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="100">
+
+                <ImageView
+                    android:id="@+id/iv_ic_username"
+                    android:layout_marginTop="30dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/account_username"/>
+
+                <TextView
+                    android:id="@+id/tv_cange_username"
+                    android:paddingLeft="5dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="90"
+                    android:text="Change username"
+                    android:textSize="16sp"
+                    android:textColor="#B2B2B2"/>
+
+                <ImageView
+                    android:id="@+id/iv_ic_panah_Username"
+                    android:layout_weight="10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="35dp"
+                    android:src="@drawable/panah" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ll_background_cange_password"
+                android:weightSum="100"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/iv_ic_password"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_key"/>
+
+                <TextView
+                    android:id="@+id/tv_password"
+                    android:paddingLeft="5dp"
+                    android:layout_weight="90"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Change Password"
+                    android:textSize="16sp"
+                    android:textColor="#B2B2B2"/>
+
+                <ImageView
+                    android:id="@+id/iv_ic_panah_password"
+                    android:layout_weight="10"
+                    android:layout_marginTop="30dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/panah" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_background_cange_photo"
+                android:weightSum="100"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/iv_ic_addPhoto"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_add_photo"/>
+
+                <TextView
+                    android:id="@+id/tv_addphoto"
+                    android:paddingLeft="5dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="90"
+                    android:text="Change Photo"
+                    android:textSize="16sp"
+                    android:textColor="#B2B2B2"/>
+
+                <ImageView
+                    android:id="@+id/iv_ic_panah_addPhoto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="10"
+                    android:layout_marginTop="30dp"
+                    android:src="@drawable/panah" />
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="30dp"
+                android:background="#F4F4F4"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+            <LinearLayout
+                android:id="@+id/ll_background_faq"
+                android:weightSum="100"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/iv_ic_faq"
+                    android:layout_marginTop="30dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/faq"/>
+
+                <TextView
+                    android:id="@+id/tv_faq"
+                    android:paddingLeft="5dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="91"
+                    android:text="FAQ"
+                    android:textSize="16sp"
+                    android:textColor="#B2B2B2"/>
+
+                <ImageView
+                    android:id="@+id/iv_ic_panah_faq"
+                    android:layout_weight="10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:src="@drawable/panah" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_background_term"
+                android:weightSum="100"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/iv_ic_term"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/term"/>
+
+                <TextView
+                    android:id="@+id/tv_term"
+                    android:paddingLeft="5dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="86"
+                    android:text="Term Dan Conditions"
+                    android:textSize="16sp"
+                    android:textColor="#B2B2B2"/>
+
+                <ImageView
+                    android:id="@+id/iv_ic_panah_term"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="14"
+                    android:layout_marginTop="30dp"
+                    android:src="@drawable/panah" />
+
+            </LinearLayout>
+
+
+
+
+            <Button
+                android:id="@+id/btn_logout"
+                android:layout_marginTop="40dp"
+                android:layout_gravity="center"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:background="@drawable/button_rounded"
+                android:text="Log Out"/>
+
+        </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+
+</FrameLayout>
