@@ -8,8 +8,8 @@
         android:bottomRightRadius="30dp">
     </corners>
 
-    <gradient android:startColor="@color/merah_Background"
-        android:endColor="@color/merah_Background">
+    <gradient android:startColor="@color/background_merah"
+        android:endColor="@color/background_merah">
     </gradient>
 
 </shape>

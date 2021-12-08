@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@color/merah_Background">
+    android:background="@color/background_merah">
 
 
     <LinearLayout
@@ -58,7 +58,7 @@
                 app:hintTextColor="#A0A0A0"
                 app:boxStrokeColor="#A0A0A0"
                 app:boxBackgroundColor="#F4F4F4"
-                app:boxStrokeErrorColor="@color/merah_Background">
+                app:boxStrokeErrorColor="@color/background_merah">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
@@ -82,7 +82,7 @@
                 app:hintTextColor="#A0A0A0"
                 app:boxStrokeColor="#A0A0A0"
                 app:boxBackgroundColor="#F4F4F4"
-                app:boxStrokeErrorColor="@color/merah_Background"
+                app:boxStrokeErrorColor="@color/background_merah"
                 app:passwordToggleEnabled="true">
 
                 <com.google.android.material.textfield.TextInputEditText
